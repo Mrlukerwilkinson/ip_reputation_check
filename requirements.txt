@@ -1,0 +1,5 @@
+requests>=2.25.1
+pyfiglet>=0.8
+termcolor>=1.1.0
+prettytable>=2.0.0
+dnspython>=2.0.0
