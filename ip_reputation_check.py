@@ -7,10 +7,11 @@ import os
 
 ########################################### - HEADER - ###########################################
 def print_header():
-    # Function to print the header; centralizes header printing logic
     header = pyfiglet.figlet_format("IP Reputation Tool", font="slant")
-    subheader = "created by TEPG - 2024"  # Keeping it simple for readability
+    summary = "This tool checks the reputation of an IP address using various online services, including ipinfo, AbuseIPDB, and VirusTotal. \n \nIt's designed to be user-friendly, quickly providing information in a visually appealing manner.\n"
+    subheader = "Created by TEPG - 2024\n"  
     print(colored(header, 'cyan'))
+    print(colored(summary, 'white'))
     print(colored(subheader, 'yellow'))
 
 ################################### - IP INFO FUNCTION - ##########################################################
@@ -93,7 +94,6 @@ def check_virustotal(ip_address, api_key):
     except Exception as e:
         print(colored(f"Error contacting VirusTotal: {e}", 'red'))
 
-# Highlighting malicious detections in red
 def print_virustotal_info(result):
     # Simplify to focus on malicious detection highlighting
     data = result.get('data', {})
@@ -154,7 +154,7 @@ def main():
     while True:
         ip_address = input("Enter the IP address: ")
         if is_valid_ip(ip_address):
-            print(colored(f" Valid IP address. Using {ip_address} as the source IP...", 'green'))
+            print(colored(f"Valid IP address. Using {ip_address} as the source IP.", 'green'))
             break
         else:
             print(colored(f"Invalid IP address. Please enter a valid IPv4 or IPv6 address.", 'red'))
