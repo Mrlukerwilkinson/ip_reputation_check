@@ -52,6 +52,9 @@ Run the script from the command line:
 ````
 python ip_reputation_check.py
 ````
+![image](https://github.com/Mrlukerwilkinson/ip_reputation_check/assets/140768032/8bad6a6b-0eca-4e71-ac82-f1695c425b6c)
+![image](https://github.com/Mrlukerwilkinson/ip_reputation_check/assets/140768032/a04619da-c239-4a82-9f48-c4104dc633c2)
+
 
 ## Contributing
 Contributions to the IP Reputation Check Tool are welcome. Please follow the standard GitHub pull request process to propose changes.
